@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :flight_routes do
+    resources :flights
+  end
+  get "users/new", controller: "users", action: "new"
+
+  root controller: "flight_routes", action: "index"
+
 end

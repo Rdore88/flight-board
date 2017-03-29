@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  flight_routes: one
+  number_of_passengers: 1
+  arrived: false
+  stocked: false
+  clean: false
+
+two:
+  name: MyString
+  flight_routes: two
+  number_of_passengers: 1
+  arrived: false
+  stocked: false
+  clean: false

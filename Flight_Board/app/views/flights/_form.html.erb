@@ -1,0 +1,21 @@
+<h1>Create flight for route from <%=@flight_route.origin %> to <%= @flight_route.destination %></h1>
+<%= form_for [@flight_route, @flight] do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :number_of_passengers %>
+  <%= f.number_field :number_of_passengers %>
+
+  <%= f.label :arrived %>
+  <%= f.check_box :arrived, {}, true, false %>
+
+  <%= f.label :clean %>
+  <%= f.check_box :clean, {}, true, false %>
+
+  <%= f.label :stocked %>
+  <%= f.check_box :stocked, {}, true, false %>
+
+  <%= f.submit %>
+
+<% end %>

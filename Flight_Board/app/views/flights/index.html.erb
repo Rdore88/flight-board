@@ -1,0 +1,23 @@
+<h1>Flights</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number of Passengers</th>
+      <th>Route</th>
+      <th>Arrived</th>
+      <th>Cleaned</th>
+      <th>Stocked</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= @flights.each do |flight| %>
+    <td><%= flight.name %></td>
+        <td><%= flight.number_of_passengers %></td>
+        <td><%= flight.arrived %></td>
+        <td><%= flight.clean %></td>
+        <td><%= flight.stocked %></td>
+    <% end %>
+  </tbody>
+</table>
